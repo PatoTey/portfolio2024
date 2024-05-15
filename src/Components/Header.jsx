@@ -21,9 +21,13 @@ export default function Content(){
                     <img className="sociallink" src={logolkdin} alt="initials of linkedin"/>
                 </a>
             </div>
-            <div className="nav">
-                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/"><h3>Overview</h3></NavLink>
-                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/about"><h3>About me</h3></NavLink>
+            <div className="nav-section">
+                <h1 className="nav-title">Roles</h1>
+                <div className="nav">
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/aboutme"><h3>About Me</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/"><h3>Web Developer</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/pixelartist"><h3>Pixel Artist</h3></NavLink>
+                </div>
             </div>
         </div>
     )

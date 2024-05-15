@@ -13,7 +13,7 @@ export default function AboutSpanish(){
                 MySQL.
             </p>
             <p>
-                He trabajado con algunos lenguajes de programacion como lo son C, C++, C#, Python, Java and PHP, desarrollando pequeños 
+                He trabajado con algunos lenguajes de programacion como lo son C, C++, C#, Python, Java y PHP, desarrollando pequeños 
                 proyectos personales.
             </p>
             <p>

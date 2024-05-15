@@ -1,10 +1,12 @@
 :root {
 	--bgColor : #2b324a;
-	--textColor : #f8f4f2;
+	--textColor : #e2e4ea;
+	--primary: #a2afd5;
+	--secondary: #293d76;
+	--accent: #3a5ecb;
 }
 
 body {
-  margin: 0;
   background-color: var(--bgColor) ;
   color: var(--textColor);
   font-family: 'Handjet', cursive;
@@ -15,14 +17,13 @@ body {
 	flex-direction: column;
 	text-align: center;
 	animation: fadein 2s 0s 1;
-	margin-bottom: 25em;
 	margin-top: 8em;
 }
 
 .nameTitle {
 	font-size: 9.375rem;
 	font-family: 'Borel', cursive;
-	margin: 0;
+	margin: 0em;
 	animation-name: rotate;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -51,13 +52,34 @@ body {
 	width: 2em;
 }
 
-.nav {
+.nav-section{
+	display: flex;
+	flex-direction: column;
+	gap: 0em;
 	margin-top: 3em;
+}
+
+.nav {
 	display: flex;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
+}
+
+.pages-section{
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin-top: 10em;
+}
+
+.pages-title{
+	text-align: center;
+	
+	animation: reveal linear both;
+	animation-timeline: view();
+	animation-range: entry 30% cover 40%;
 }
 
 .pages {
@@ -164,7 +186,11 @@ body {
 
 .introduction {
 	margin: 0 5em 5em 5em; 
-	font-size: 1.5rem;;
+	font-size: 1.5rem;
+	background-color: var(--secondary);
+	color: var(--textColor);
+	padding: 1em;
+	border-radius: 1em;
 }
 
 .shine {

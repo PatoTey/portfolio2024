@@ -7,13 +7,9 @@ export default function About(){
     }
     return (
         <div>
-            <div className="nav">
-                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/"><h3>Overview</h3></NavLink>
-                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/about"><h3>About me</h3></NavLink>
-            </div>
             <div className="aboutnav">
-                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" end to="/about"><h3>English</h3></NavLink>
-                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/about/spanish"><h3>Español</h3></NavLink>
+                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" end to="/aboutme"><h3>English</h3></NavLink>
+                <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/aboutme/spanish"><h3>Español</h3></NavLink>
             </div>
             <Outlet/>
         </div>
