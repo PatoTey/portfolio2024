@@ -6,6 +6,7 @@ import AboutEnglish from "./Pages/AboutEnglish";
 import AboutSpanish from "./Pages/AboutSpanish";
 import Footer from "./Components/Footer";
 import Pages from "./Components/Pages"
+import PixelArtist from "./Pages/PixelArtist";
 
 function App() {
 	return (
@@ -18,7 +19,7 @@ function App() {
 							<Route path="spanish" element={<AboutSpanish/>}/>
 						</Route>
 						<Route index element={<Pages/>}/>
-						<Route path="/pixelartist" element={<div>Hola artista</div>} />
+						<Route path="/pixelartist" element={<PixelArtist/>} />
 					</Route>
 				</Routes>
 			</BrowserRouter>

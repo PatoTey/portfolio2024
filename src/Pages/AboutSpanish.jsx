@@ -1,6 +1,8 @@
 import React from "react";
+import useTitleChanger from "../CustomHooks/useTitleChanger";
 
 export default function AboutSpanish(){
+    useTitleChanger("Teyo's Portfolio - Sobre Teyo")
     return (
         <div className="introduction">
             <p>

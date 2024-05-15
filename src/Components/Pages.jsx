@@ -2,8 +2,10 @@ import React from "react";
 import data from "../Data/PagesData"
 import logogit from "../images/github-mark-white.png"
 import logodemo from "../images/logodemo.png"
+import useTitleChanger from "../CustomHooks/useTitleChanger";
 
 export default function Pages(){
+    useTitleChanger("Teyo's Portfolio - Web Developer")
     const pages = data.map(page => {
         return (              
                 <div key={page.id} className="page">
@@ -29,11 +31,11 @@ export default function Pages(){
     })
 
     return (       
-        <div className="pages-section">
+        <main className="pages-section">
             <h1 className="pages-title">Here are some of my projects, take a look!</h1>
             <div className="pages">
                 {pages}
             </div>
-        </div>
+        </main>
     )
 }

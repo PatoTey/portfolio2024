@@ -7,9 +7,10 @@
 }
 
 body {
-  background-color: var(--bgColor) ;
-  color: var(--textColor);
-  font-family: 'Handjet', cursive;
+	margin: 0;
+	background-color: var(--bgColor) ;
+	color: var(--textColor);
+	font-family: 'Handjet', cursive;
 }
 
 .intro {
@@ -23,7 +24,7 @@ body {
 .nameTitle {
 	font-size: 9.375rem;
 	font-family: 'Borel', cursive;
-	margin: 0em;
+	margin: 0.5em;
 	animation-name: rotate;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
@@ -65,7 +66,13 @@ body {
 	justify-content: center;
 	align-items: center;
 	gap: 1em;
+	background-color: var(--secondary);
+	margin: 0 auto;
+	padding: 0.5em;
+	border-radius: 1em;
 }
+
+/**Developer Section-------------------------------------------------------------------------------------------------------------------------------**/
 
 .pages-section{
 	display: flex;
@@ -76,10 +83,8 @@ body {
 
 .pages-title{
 	text-align: center;
-	
-	animation: reveal linear both;
-	animation-timeline: view();
-	animation-range: entry 30% cover 40%;
+
+	animation: appear 5s 0s;
 }
 
 .pages {
@@ -175,8 +180,11 @@ body {
 .unlinknav {
 	text-decoration: none;
 	color: inherit;
+	padding: 0;
+	margin: 0;
 }
 
+/**About me Section -------------------------------------------------------------------------------------------------------------------------------**/
 .aboutnav {
 	display: flex;
 	justify-content: center;
@@ -191,6 +199,7 @@ body {
 	color: var(--textColor);
 	padding: 1em;
 	border-radius: 1em;
+	animation: appear 4s 0s;
 }
 
 .shine {
@@ -208,6 +217,38 @@ body {
 	color: rgb(120, 253, 123);
 }
 
+/**Pixel Artist Section -------------------------------------------------------------------------------------------------------------------------------**/
+
+.px-section {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10em;
+	animation: appear 4s 0s;
+}
+
+.px-title {
+	text-align: center;
+}
+
+.px-artcontainer{
+	columns: 3;
+	column-gap: 2em;
+	padding: 1em;
+	margin: 0 1em;
+}
+
+.px-image{
+	width: 100%;
+	height: auto;
+	border-radius: 0.5em;
+	margin-bottom: 2em;
+
+	animation: reveal linear both;
+	animation-timeline: view();
+	animation-range: entry 30% cover 40%;
+}
+
+/**Keyframe/Media/Others Section ----------------------------------------------------------------------------------------------------------------------**/
 @keyframes shine {
 	0% {color: rgb(94, 231, 94);}
 	25% {color: rgb(63, 205, 205);}

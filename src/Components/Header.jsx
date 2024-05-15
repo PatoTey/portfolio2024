@@ -7,6 +7,10 @@ import { NavLink } from "react-router-dom";
 export default function Content(){
     const styles = {
         textDecoration: "underline",
+        backgroundColor: "#a2afd5",
+        padding: "0em 0.5em",
+        borderRadius: "1em",
+        color: "#293d76"
     }
     return (
         <div className="intro">
