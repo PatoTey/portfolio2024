@@ -6,7 +6,7 @@ export default function AboutSpanish(){
     return (
         <div className="introduction">
             <p>
-               Hola, soy Patricio, mi apodo es "Teyo" soy un Ingeniero Civil en Computación e Informática graduado de la Universidad de 
+               Hola, soy Patricio, mi apodo es "Teyo" soy un Ingeniero Civil en Computación e Informática titulado de la Universidad de 
                Tarapacá en Chile
             </p>
             <p>

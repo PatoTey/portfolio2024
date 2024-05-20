@@ -290,7 +290,9 @@ body {
 }
 
 @media (max-width: 806px) {
-
+	main {
+		padding: 0.5em;
+	}
 	.intro {
 		margin-bottom: 15em;
 		margin-top: 8em;
@@ -320,5 +322,9 @@ body {
 	.introduction {
 		margin: 0 1em 1em 1em; 
 		font-size: 1.5rem;;
+	}
+
+	.px-artcontainer{
+		columns: 1;
 	}
 }
