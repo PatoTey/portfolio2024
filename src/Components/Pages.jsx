@@ -15,7 +15,12 @@ export default function Pages(){
                         {page.imagedesk && <a href={page.appurl} target="_blank" rel="noreferrer" className="srclink"><img className="pageimagedesk"  src={page.imagedesk} alt=""/></a>}
                         <a href={page.appurl} target="_blank" rel="noreferrer" className="srclink"><img className="pageimagemob" src={page.imagemob} alt=""/></a>
                     </div>
-                    <h3 className="pagemade">Made with: {page.madewith} </h3>
+                    <div className="pagemade">Made with: {page.madewith.map(tecnology=>{
+                        return(
+                            <p className="tecnologies" key={tecnology}>{tecnology}</p>
+                        )
+                    })} 
+                    </div>
                     <span className="srclinks">
                         {page.hascode && <a href={page.githuburl} target="_blank" rel="noreferrer" className="srclink">
                             <img className="logogit" alt="logo of a programing cat" src={logogit} /> 

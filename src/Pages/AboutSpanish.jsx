@@ -23,7 +23,7 @@ export default function AboutSpanish(){
             </p>
             <p>
                 Tambien soy un desarrollador de videojuegos 😎, He realizado pequeños juegos en Unity, Unreal Engine y Godot! en 2D y 3D! 
-                He modelado todos mis assets. Ya mencioné que amo el pixelart?
+                He modelado todos mis assets. ¿Ya mencioné que amo el pixelart?
             </p>
         </div>
     )

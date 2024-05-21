@@ -6,7 +6,8 @@ import AboutEnglish from "./Pages/AboutEnglish";
 import AboutSpanish from "./Pages/AboutSpanish";
 import Footer from "./Components/Footer";
 import Pages from "./Components/Pages"
-import PixelArtist from "./Pages/PixelArtist";
+import Formation from "./Pages/Formation";
+import Experience from "./Pages/Experience";
 
 function App() {
 	return (
@@ -14,12 +15,13 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Main/>}>
+						<Route index element={<Pages/>}/>
 						<Route path="/aboutme" element={<About/>}>
 							<Route index element={<AboutEnglish/>}/>
 							<Route path="spanish" element={<AboutSpanish/>}/>
 						</Route>
-						<Route index element={<Pages/>}/>
-						<Route path="/pixelartist" element={<PixelArtist/>} />
+						<Route path="formation" element={<Formation/>}/>
+						<Route path="experience" element={<Experience/>}/>
 					</Route>
 				</Routes>
 			</BrowserRouter>
