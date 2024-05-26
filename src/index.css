@@ -17,7 +17,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	animation: fadein 2s 0s 1;
+	animation: appear 3s 0s;
 	margin-top: 8em;
 }
 
@@ -26,7 +26,7 @@ body {
 	font-family: 'Borel', cursive;
 	margin: 0 0.5em 0.5em 0.5em;
 	user-select: none;
-
+	animation: fadein 2s 0s 1;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in;
 }
@@ -78,7 +78,7 @@ body {
 	font-size: 1em;
 }
 
-.copyClipboard:{
+.copyClipboard{
 	color: var(--primary);
 }
 
@@ -123,6 +123,10 @@ body {
 	margin: 0 auto;
 	padding: 0.5em;
 	border-radius: 1em;
+}
+
+.nav-link{
+	min-width: 8em;
 }
 
 .srclinks {
@@ -312,7 +316,7 @@ body {
 /**Formation Section -------------------------------------------------------------------------------------------------------------------------------**/
 
 .formation-section {
-	margin: 1em 5em 1em 5em;
+	margin: 1em 25% 1em 25%;
 	background-color: var(--secondary);
 	border-radius: 1em;
 	padding: 1em 3em;
@@ -368,8 +372,12 @@ body {
 /**Experience Section ------------------------------------------------------------------------------------------------------------------------------**/
 
 .experience-section {
-	margin: 1em;
+	margin: 0 25%;
 	
+}
+
+.experience-date{
+	text-align: center;
 }
 
 .experience-text {
@@ -454,6 +462,11 @@ body {
 		gap: 7em;
 
 	}
+
+	.nav-link{
+		min-width: 5em;
+		font-size: 0.8em;
+	}
 	
 	.introduction {
 		margin: 0 1em 1em 1em; 
@@ -466,6 +479,9 @@ body {
 		border-radius: 1em;
 		padding: 1em 3em;
 		align-items: center;
+	}
+	.experience-section{
+		margin: 0 1em;
 	}
 
 	.experience-text {

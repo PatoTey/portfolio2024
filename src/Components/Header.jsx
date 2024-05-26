@@ -54,10 +54,10 @@ export default function Content(){
             </div>
             <section className="nav-section">
                 <div className="nav">
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/aboutme"><h3>About Me</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/"><h3>Web Developer</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/formation"><h3>Formation</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav" to="/experience"><h3>Experience</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/aboutme"><h3>About Me</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/"><h3>Web Developer</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/formation"><h3>Formation</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/experience"><h3>Experience</h3></NavLink>
                 </div>
             </section>
         </div>
