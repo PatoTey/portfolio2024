@@ -37,7 +37,9 @@ export default function Pages(){
 
     return (       
         <main className="pages-section">
-            <h1 className="pages-title">Here are some of my projects, take a look!</h1>
+            <h1 className="pages-title">
+                Here are some of my projects, take a look!
+            </h1>
             <div className="pages">
                 {pages}
             </div>
