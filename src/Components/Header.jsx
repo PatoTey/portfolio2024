@@ -1,9 +1,9 @@
 import React from "react";
-import logogit from "../images/github-mark-white.png"
-import logolkdin from "../images/LI-In-Bug.png"
+import logogit from "../images/github-mark-white.webp"
+import logolkdin from "../images/LI-In-Bug.webp"
 import logoreact from "../images/logoreact.svg"
 import logojs from "../images/logojs.webp"
-import logonode from "../images/logonode.jpg"
+import logonode from "../images/logonode.webp"
 import logoexpress from "../images/logoexpress.png"
 import { NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
@@ -36,10 +36,10 @@ export default function Content(){
                 <img src={logoexpress} alt="logo React" className="logo"/>
             </section>
             <section className="socialslinks">
-                <a href="https://github.com/PatoTey" target="_blank" rel="noreferrer" className="srclink">
+                <a href="https://github.com/PatoTey" target="_blank" rel="noreferrer" className="srclink" aria-label="Go to Patricio's Github page">
                     <img className="sociallink" src={logogit} alt="a programing cat"/>
                 </a>
-                <a href="https://www.linkedin.com/in/patricio-tudela-chavera/" target="_blank" rel="noreferrer" className="srclink">
+                <a href="https://www.linkedin.com/in/patricio-tudela-chavera/" target="_blank" rel="noreferrer" className="srclink" aria-label="Go to Patricio's Linkedin page">
                     <img className="sociallink" src={logolkdin} alt="initials of linkedin"/>
                 </a> 
             </section>
@@ -49,15 +49,15 @@ export default function Content(){
                 <FaCopy className="copyClipboard" onClick={()=>copyToClipboard()}/>
             </div>
             <div className="cv-container">
-                <a href="/resources/Resume_Patricio_Tudela.pdf" download className="cvbtn"> Download CV English</a>
-                <a href="/resources/Curriculum_Patricio_Tudela.pdf" download className="cvbtn">Descargar CV Español</a>
+                <a href="/resources/Resume_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Dowloand english CV"> Download CV English</a>
+                <a href="/resources/Curriculum_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Download spanish CV">Descargar CV Español</a>
             </div>
             <section className="nav-section">
                 <div className="nav">
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/aboutme"><h3>About Me</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/"><h3>Web Developer</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/formation"><h3>Formation</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/experience"><h3>Experience</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/aboutme" aria-label="Move to About me section"><h3>About Me</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/" aria-label="Move to Developer section"><h3>Web Developer</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/formation" aria-label="Move to academic formation section"><h3>Formation</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/experience" aria-label="Move experience section"><h3>Experience</h3></NavLink>
                 </div>
             </section>
         </div>

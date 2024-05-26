@@ -1,9 +1,10 @@
 :root {
-	--bgColor : #2b324a;
-	--textColor : #e2e4ea;
-	--primary: #a2afd5;
-	--secondary: #293d76;
-	--accent: #3a5ecb;
+
+	--textColor: #eaeaf4;
+	--bgColor: #1e1e2a;
+	--primary: #9d9dd4;
+	--secondary: #2d2d71;
+	--accent: #4949be;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 
 .nameTitle:hover{
 	transform: scale(1.12);
-	color: rgb(230, 185, 104);
+	color: rgb(239 181 74);
 	cursor: none;
 }
 
@@ -44,6 +45,7 @@ body {
 .subtitle {
 	font-size: 3.125rem;
 	margin: 0;
+	color: rgb(226, 180, 95);
 }
 
 .socialslinks {

@@ -1,7 +1,7 @@
 import React from "react";
 import data from "../Data/PagesData"
-import logogit from "../images/github-mark-white.png"
-import logodemo from "../images/logodemo.png"
+import logogit from "../images/github-mark-white.webp"
+import logodemo from "../images/logodemo.webp"
 import useTitleChanger from "../CustomHooks/useTitleChanger";
 
 export default function Pages(){

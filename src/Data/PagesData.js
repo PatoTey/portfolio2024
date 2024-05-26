@@ -1,14 +1,14 @@
-import csmob from "../images/csmobileshot.png"
-import csdesk from "../images/csdeskshot.png"
-import mclmob from "../images/mclmob.png"
-import gmmob from "../images/gmmob.png"
-import gmdesk from "../images/gmdesk.png"
+import csmob from "../images/csmobileshot.webp"
+import csdesk from "../images/csdeskshot.webp"
+import mclmob from "../images/mclmob.webp"
+import gmmob from "../images/gmmob.webp"
+import gmdesk from "../images/gmdesk.webp"
 
 const data = [
     {
         id: 1,
         appname: "Gamon",
-        description: "A game marketplace, where you can find the game you want! Here you can view and order your games",
+        description: "A game marketplace where you can view, wishlist and order your favorite games using the Paypal API",
         madewith: ["React", "React-Router", "Node Express", "MySQL", "PayPal API"],
         imagedesk: gmdesk,
         imagemob: gmmob,
@@ -20,7 +20,7 @@ const data = [
     {
         id: 2,
         appname: "CoffeStop",
-        description: "A web for ordering your favorite type of coffe!",
+        description: "A web to showcase recipes and ordering your favorite type of coffe!",
         madewith: ["React", "React-Router", "Firebase"],
         imagedesk: csdesk,
         imagemob: csmob,
