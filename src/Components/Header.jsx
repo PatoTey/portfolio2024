@@ -15,7 +15,7 @@ export default function Content(){
         textDecoration: "underline",
         backgroundColor: "#a2afd5",
         padding: "0em 0.5em",
-        borderRadius: "1em",
+        borderRadius: "0.5em",
         color: "#293d76"
     }
 
