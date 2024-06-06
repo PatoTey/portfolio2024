@@ -28,7 +28,7 @@ export default function Content(){
         <div className="intro">
             <h1 className="nameTitle">Patricio Tudela</h1>
             <small className="nickname">Teyo</small>
-            <h2 className="subtitle">Full-Stack Developer</h2>
+            <h2 className="subtitle">Full-Stack Web Developer</h2>
             <section className="tecnologies-section">
                 <img src={logojs} alt="logo React" className="logo"/>
                 <img src={logoreact} alt="logo React" className="logo"/>

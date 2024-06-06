@@ -30,6 +30,7 @@ body {
 	animation: fadein 1s 0s 1;
 	transition-duration: 0.5s;
 	transition-timing-function: ease-in;
+	line-height: 1em;
 }
 
 .nameTitle:hover{
@@ -98,14 +99,19 @@ body {
 }
 
 .cvbtn{
-	padding: 1em;
+	padding: 0.75em;
 	font-size: 1em;
 	font-weight: bold;
-	background-color: var(--primary) ;
-	color: var(--bgColor);
+	background-color: var(--secondary) ;
+	color: var(--textColor);
 	border-radius: 1em;
 	text-decoration: none;
 	user-select: none;
+	border: 0.125em solid transparent;
+}
+
+.cvbtn:hover {
+	border: 0.125em solid var(--primary);
 }
 
 .nav-section{
@@ -125,25 +131,17 @@ body {
 	margin: 0 auto;
 	padding: 0.5em;
 	border-radius: 1em;
+	flex-wrap: wrap;
 }
 
 .nav-link{
 	min-width: 8em;
+	border: 0.125em solid transparent;
 }
 
-.srclinks {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 3em;
-}
-
-.srclink {
-	display: flex;
-	align-items: center;
-	gap: 0.3em;
-	color: inherit;
-	text-decoration: none;
+.nav-link:hover {
+	border: 0.125em solid var(--primary);
+	border-radius: 0.5em;
 }
 
 .tecnologies-section{
@@ -186,53 +184,55 @@ body {
 
 .pages {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 	animation: appear 5s 0s;
-	gap: 10em;
+	gap: 1em;
 }
 
 .page {
 	display: flex;
-	flex-direction: column;
-	text-align: center;
+	flex-direction: row;
+	border: 0.125em solid #151418;
+	background-color: #17171d;
+	border-radius: 1em;
+	max-width: 45%;
+	height: 30em;
 
 	animation: reveal linear both;
 	animation-timeline: view();
 	animation-range: entry 30% cover 40%;
 }
 
+.page:hover{
+	border: 0.125em solid var(--primary);
+}
+
+.page-data{
+	max-width: 30%;
+	padding: 1em;
+}
+
 .pagetitle {
-	font-size: 3.125rem;
+	font-size: 2rem;
 }
 
 .pagedescription {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 0;
-	margin-bottom: 0.5em;
+	text-wrap: wrap;
 }
 
-.pageimages {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	gap: 2em;
+.image-container{
+	max-width: 70%;
+	flex-grow: 1;
 }
 
 .pageimagedesk {
-	max-width: 40em;
-	border-radius: 1em;
-}
-
-.pageimagedesk:hover, .pageimagemob:hover {
-	animation-name: bounce;
-	animation-duration: 1s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
-.pageimagemob {
-	max-width: 20em;
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
 	border-radius: 1em;
 }
 
@@ -241,11 +241,24 @@ body {
 	flex-direction: row;
 	align-items: center;
 	gap: 0.2em;
-	justify-content: center;
 	margin: 1em 0 1em 0;
 	flex-wrap: wrap;
 	flex-basis: 3em;
 
+}
+
+.srclinks {
+	display: flex;
+	align-items: center;
+	gap: 3em;
+}
+
+.srclink {
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+	color: inherit;
+	text-decoration: none;
 }
 
 .tecnologies{
@@ -253,7 +266,7 @@ body {
 	border-radius: 1em;
 	padding: 0.5em;
 	width: auto;
-	
+	margin: 0;
 }
 
 .logogit {
@@ -262,6 +275,14 @@ body {
 
 .logodemo {
 	width: 2em;
+}
+
+.work-text{
+	font-size: 1.5em;
+}
+
+.work-star{
+	color: yellow;
 }
 
 .footer {
@@ -417,11 +438,6 @@ body {
 	100% { transform: rotate(-2deg);}
 }
 
-@keyframes bounce {
-	0% {transform: translateY(10px)}
-	100% { transform: translateY(0px);}
-}
-
 @keyframes reveal {
 	0% { 
 		opacity: 0;
@@ -433,7 +449,7 @@ body {
 	}
 }
 
-@media (max-width: 806px) {
+@media (max-width: 1240px) {
 	main {
 		margin: 0;
 		padding: 0.5em;
@@ -452,12 +468,57 @@ body {
 		font-size: 1.5em;
 	}
 
-	.pageimages {
+	.pages {
+		gap: 5em;
+	}
+
+	.page{
 		flex-direction: column;
+		max-width: 100%;
+		max-height: none;
+	}
+
+	.page-data{
+		max-width: 100%;
+	}
+	
+	.pagetitle {
+		font-size: 1.5rem;
+	}
+	
+	.pagedescription {
+		font-size: 1rem;
+	}
+	
+	.image-container{
+		max-width: 100%;
+		max-height: 50%;
 	}
 
 	.pageimagedesk {
-		max-width: 310px;
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+		border-radius: 1em;
+	}
+	
+	
+	.pagemade{
+		font-size: 1rem;
+	}
+	
+	.srclinks {
+		display: flex;
+		align-items: center;
+		gap: 3em;
+	}
+	
+	.srclink {
+		display: flex;
+		align-items: center;
+		gap: 0.3em;
+		color: inherit;
+		text-decoration: none;
 	}
 
 	.aboutnav {
