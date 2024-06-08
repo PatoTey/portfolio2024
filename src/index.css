@@ -9,7 +9,7 @@
 
 body {
 	margin: 0;
-	background-color: var(--bgColor) ;
+	background-color: var(--bgColor);
 	color: var(--textColor);
 	font-family: 'Handjet', cursive;
 }
@@ -195,7 +195,11 @@ body {
 	display: flex;
 	flex-direction: row;
 	border: 0.125em solid #151418;
-	background-color: #17171d;
+	/*background-color: #17171d;*/
+	background-color: transparent;
+	background-image: linear-gradient(160deg,rgba(0, 0, 0, 0.25) 0% 50%, var(--primary));
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	border-radius: 1em;
 	max-width: 45%;
 	height: 30em;
@@ -203,6 +207,9 @@ body {
 	animation: reveal linear both;
 	animation-timeline: view();
 	animation-range: entry 30% cover 40%;
+	-webkit-animation: reveal linear both;
+	-webkit-animation-timeline: view();
+	-webkit-animation-range: entry 30% cover 40%;
 }
 
 .page:hover{
@@ -315,6 +322,8 @@ body {
 	margin: 0 5em 5em 5em; 
 	font-size: 1.5rem;
 	background-color: var(--secondary);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	color: var(--textColor);
 	padding: 1em;
 	border-radius: 1em;
@@ -475,7 +484,7 @@ body {
 	.page{
 		flex-direction: column;
 		max-width: 100%;
-		max-height: none;
+		height: 50%;
 	}
 
 	.page-data{
@@ -487,12 +496,13 @@ body {
 	}
 	
 	.pagedescription {
-		font-size: 1rem;
+		font-size: 1.5rem;
 	}
 	
 	.image-container{
 		max-width: 100%;
 		max-height: 50%;
+		
 	}
 
 	.pageimagedesk {
@@ -523,7 +533,6 @@ body {
 
 	.aboutnav {
 		gap: 7em;
-
 	}
 
 	.nav-link{
