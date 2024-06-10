@@ -16,6 +16,7 @@ const data = [
         hascode: false,
         githuburl: "",
         work: true,
+        time: "Nov 2023 - Mar 2024",
     },
     {
         id: 1,
@@ -29,6 +30,35 @@ const data = [
         hascode: true,
         githuburl: "https://github.com/PatoTey/Gamon",
         work: false,
+        time: "",
+    },
+    {
+        id: 6,
+        appname: "Try Hardware",
+        description: "E-Commerce site with forums/community space for buyers and sellers",
+        madewith: ["Laravel", "PHP", "MySQL", "MercadoPago API", "Front-End", "Back-End"],
+        imagedesk: false,
+        imagealt: "TryHardWare Logo",
+        hasdemo: false,
+        appurl: "",
+        hascode: false,
+        githuburl: "",
+        work: true,
+        time: "Feb 2021 - May 2021",
+    },
+    {
+        id: 5,
+        appname: "Good Lucky Arica",
+        description: "An E-commerce site to buy and order donuts, cakes and other sweets",
+        madewith: ["Laravel", "PHP", "MySQL", "MercadoPago API", "Front-End", "Back-End"],
+        imagedesk: false,
+        imagealt: "Good Lucky Company Logo",
+        hasdemo: false,
+        appurl: "",
+        hascode: false,
+        githuburl: "",
+        work: true,
+        time: "Sept 2020 - Dec 2020",
     },
     {
         id: 2,
@@ -42,6 +72,7 @@ const data = [
         hascode: true,
         githuburl: "https://github.com/PatoTey/CoffeeStop",
         work: false,
+        time: "",
     },
     {
         id: 3,
@@ -55,6 +86,7 @@ const data = [
         hascode: true,
         githuburl: "https://github.com/PatoTey/MyCartList",
         work: false,
+        time: "",
     }
 ]
 

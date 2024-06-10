@@ -17,26 +17,40 @@ body {
 .intro {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
 	animation: appear 2s 0s;
-	margin-top: 8em;
+	padding: 10em 10em 0 10em;
+}
+
+.intro-container{
+	display: flex;
+	flex-direction: row;
+	gap: 20em;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro-data{
+	display: flex;
+	flex-direction: column;
+}
+
+.intro-data-description {
+	max-width: 16em;
+	font-size: 1.5rem;
+}
+
+.intro-data-learnmore {
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: rgb(248, 129, 242);
 }
 
 .nameTitle {
-	font-size: 9.375rem;
+	font-size: 4rem;
 	font-family: 'Borel', cursive;
-	margin: 0 0.5em 0.5em 0.5em;
 	user-select: none;
-	animation: fadein 1s 0s 1;
-	transition-duration: 0.5s;
-	transition-timing-function: ease-in;
-	line-height: 1em;
-}
-
-.nameTitle:hover{
-	transform: scale(1.12);
-	color: rgb(239 181 74);
-	cursor: none;
+	margin: 0;
 }
 
 .nickname {
@@ -46,15 +60,18 @@ body {
 .subtitle {
 	font-size: 3.125rem;
 	margin: 0;
-	color: rgb(226, 180, 95);
+	background: linear-gradient(120deg, rgb(226, 180, 95), rgb(248, 129, 242)) ;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .socialslinks {
+	font-size: 3rem;
 	display: flex;
-	gap: 1em;
+	gap: .5em;
 	align-items: center;
 	justify-content: center;
-	margin-top: 1em;
 }
 
 .sociallink {
@@ -75,6 +92,7 @@ body {
 	align-items: center;
 	font-size: 1.5em;
 	gap: 0.3em;
+	cursor: pointer;
 }
 
 .email{
@@ -83,6 +101,11 @@ body {
 
 .copyClipboard{
 	color: var(--primary);
+	transition: 0.25s;
+}
+
+.copyClipboard:hover{
+	color: var(--accent)
 }
 
 .copyClipboard:active{
@@ -116,8 +139,6 @@ body {
 
 .nav-section{
 	display: flex;
-	flex-direction: column;
-	gap: 0em;
 	margin-top: 3em;
 }
 
@@ -171,15 +192,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
-	margin-top: 10em;
 	justify-content: center;
 	align-items: center;
+	margin-top: 5em;
 }
 
 .pages-title{
-	text-align: center;
-
-	animation: appear 5s 0s;
+	margin: 0;
+	font-size: 3rem;
+	animation: appear 1s 0s;
 }
 
 .pages {
@@ -187,7 +208,7 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
-	animation: appear 5s 0s;
+	animation: appear 1s 0s;
 	gap: 1em;
 }
 
@@ -224,6 +245,7 @@ body {
 
 .pagedescription {
 	font-size: 1.5rem;
+	font-weight: normal;
 	margin: 0;
 	text-wrap: wrap;
 }
@@ -253,8 +275,7 @@ body {
 
 .srclinks {
 	display: flex;
-	align-items: center;
-	gap: 3em;
+	flex-direction: column;
 }
 
 .srclink {
@@ -273,12 +294,12 @@ body {
 	margin: 0;
 }
 
-.logogit {
-	width: 2em;
+.logossrc {
+	font-size: 2em;
 }
 
-.logodemo {
-	width: 2em;
+.codetext {
+	text-wrap: nowrap;
 }
 
 .work-text{
@@ -290,10 +311,18 @@ body {
 }
 
 .footer {
+	display: flex;
+	flex-direction: row;
 	margin-top: 3em;
 	background-color: #22273a;
 	padding: 2em;
-	text-align: center;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+.footer-link{
+	font-size: 2rem;
 }
 
 .unlink {
@@ -324,7 +353,7 @@ body {
 	color: var(--textColor);
 	padding: 1em;
 	border-radius: 1em;
-	animation: appear 4s 0s;
+	animation: appear 1s 0s;
 }
 
 .shine {
@@ -350,6 +379,7 @@ body {
 	border-radius: 1em;
 	padding: 1em 3em;
 	align-items: center;
+	animation: appear 1s 0s;
 }
 .formation-text{
 	font-size: 1.5em;
@@ -402,7 +432,7 @@ body {
 
 .experience-section {
 	margin: 0 25%;
-	
+	animation: appear 1s 0s;
 }
 
 .experience-date{
@@ -418,6 +448,46 @@ body {
 
 .madewith-text{
 	color: rgb(219, 146, 37);
+}
+/**Extra Section --------------------------------------------------------------------------------------------------------------------------------------**/
+
+.extra-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	margin-top: 5em;
+}
+
+.extra-title {
+	font-size: 3rem;
+	margin: 0;
+}
+
+.extra-subtitle {
+	font-size: 2rem;
+}
+
+.contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 1.5rem;
+	gap: 1em;
+}
+
+.contact-item {
+	display: flex;
+	align-items: center;
+	gap: .5em;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}
+
+.contact-logo {
+	font-size: 3rem;
 }
 /**Keyframe/Media/Others Section ----------------------------------------------------------------------------------------------------------------------**/
 @keyframes shine {
@@ -463,7 +533,21 @@ body {
 	
 	.intro {
 		margin-bottom: 5em;
-		margin-top: 8em;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.intro-container{
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	.nav-section{
+		font-size: 1rem;
+	}
+
+	.nav {
+		min-width: 50vw;
 	}
 
 	.nameTitle {
@@ -498,8 +582,7 @@ body {
 	
 	.image-container{
 		max-width: 100%;
-		max-height: 50%;
-		
+		max-height: 50%;	
 	}
 
 	.pageimagedesk {
@@ -509,23 +592,13 @@ body {
 		border-radius: 1em;
 	}
 	
-	
 	.pagemade{
 		font-size: 1rem;
 	}
 	
 	.srclinks {
-		display: flex;
-		align-items: center;
+		flex-direction: row;
 		gap: 3em;
-	}
-	
-	.srclink {
-		display: flex;
-		align-items: center;
-		gap: 0.3em;
-		color: inherit;
-		text-decoration: none;
 	}
 
 	.aboutnav {
@@ -559,5 +632,9 @@ body {
 
 	.logo{
 		width: 3em;
+	}
+	
+	.extra-title {
+		font-size: 2rem;
 	}
 }

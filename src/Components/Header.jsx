@@ -1,13 +1,11 @@
 import React from "react";
-import logogit from "../images/github-mark-white.webp"
-import logolkdin from "../images/LI-In-Bug.webp"
 import logoreact from "../images/logoreact.svg"
 import logojs from "../images/logojs.webp"
 import logonode from "../images/logonode.webp"
 import logoexpress from "../images/logoexpress.png"
 import { NavLink } from "react-router-dom";
 import { MdEmail } from "react-icons/md";
-import { FaCopy } from "react-icons/fa";
+import { FaCopy, FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 export default function Content(){
@@ -25,33 +23,46 @@ export default function Content(){
     }
      
     return (
-        <div className="intro">
-            <h1 className="nameTitle">Patricio Tudela</h1>
-            <small className="nickname">Teyo</small>
-            <h2 className="subtitle">Full-Stack Web Developer</h2>
-            <section className="tecnologies-section">
-                <img src={logojs} alt="logo React" className="logo"/>
-                <img src={logoreact} alt="logo React" className="logo"/>
-                <img src={logonode} alt="logo React" className="logo"/>
-                <img src={logoexpress} alt="logo React" className="logo"/>
-            </section>
-            <section className="socialslinks">
-                <a href="https://github.com/PatoTey" target="_blank" rel="noreferrer" className="srclink" aria-label="Go to Patricio's Github page">
-                    <img className="sociallink" src={logogit} alt="a programing cat"/>
-                </a>
-                <a href="https://www.linkedin.com/in/patricio-tudela-chavera/" target="_blank" rel="noreferrer" className="srclink" aria-label="Go to Patricio's Linkedin page">
-                    <img className="sociallink" src={logolkdin} alt="initials of linkedin"/>
-                </a> 
-            </section>
-            <div className="email-container"> 
-                <MdEmail className="email-icon"/> 
-                <p id="email" className="email" value="ptudelach@hotmail.com">ptudelach@hotmail.com</p> 
-                <FaCopy className="copyClipboard" onClick={()=>copyToClipboard()}/>
+        <section className="intro">
+            <div className="intro-container">
+                <div className="intro-data">
+                    <h1 className="nameTitle">Patricio Tudela</h1> 
+                    <small className="nickname">Teyo</small>
+                    <h2 className="subtitle">Full-Stack Web Developer</h2>
+                    <p className="intro-data-description">
+                        I am a web developer with 3 years of experience in Front-End and Back-End. 
+                        My focus is to transform ideas into interactive, user-centered digital solutions.
+                    </p>
+                    <NavLink className="intro-data-learnmore" to="/aboutme" aria-label="Move to About me section"><h3>Learn more</h3></NavLink>
+
+                </div>
+                <div className="intro-links">
+                    <section className="tecnologies-section">
+                        <img src={logojs} alt="logo React" className="logo"/>
+                        <img src={logoreact} alt="logo React" className="logo"/>
+                        <img src={logonode} alt="logo React" className="logo"/>
+                        <img src={logoexpress} alt="logo React" className="logo"/>
+                    </section>  
+                    <section className="socialslinks">
+                        <a href="https://github.com/PatoTey" target="_blank" rel="noreferrer" className="srclink" aria-label="Go to Patricio's Github page">
+                            <FaGithub className="sociallink"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/patricio-tudela-chavera/" target="_blank" rel="noreferrer" className="srclink" aria-label="Go to Patricio's Linkedin page">
+                            <FaLinkedin className="sociallink"/>
+                        </a> 
+                    </section>
+                    <div className="email-container"> 
+                        <MdEmail className="email-icon"/> 
+                        <p id="email" className="email" value="ptudelach@hotmail.com">ptudelach@hotmail.com</p> 
+                        <FaCopy className="copyClipboard" onClick={()=>copyToClipboard()}/>
+                    </div>
+                    <div className="cv-container">
+                        <a href="/resources/Resume_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Dowloand english CV"> Download CV English</a>
+                        <a href="/resources/Curriculum_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Download spanish CV">Descargar CV Español</a>
+                    </div>
+                </div>  
             </div>
-            <div className="cv-container">
-                <a href="/resources/Resume_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Dowloand english CV"> Download CV English</a>
-                <a href="/resources/Curriculum_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Download spanish CV">Descargar CV Español</a>
-            </div>
+            
             <section className="nav-section">
                 <div className="nav">
                     <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/aboutme" aria-label="Move to About me section"><h3>About Me</h3></NavLink>
@@ -60,6 +71,6 @@ export default function Content(){
                     <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/experience" aria-label="Move experience section"><h3>Experience</h3></NavLink>
                 </div>
             </section>
-        </div>
+        </section>
     )
 }
