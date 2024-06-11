@@ -1,8 +1,8 @@
 import React from "react";
 import data from "../Data/PagesData"
-import logodemo from "../images/logodemo.webp"
 import useTitleChanger from "../CustomHooks/useTitleChanger";
 import {FaStar, FaGithub, FaCode} from "react-icons/fa"
+import "../styles/projects.css"
 
 export default function Pages(){
     useTitleChanger("Teyo's Portfolio - Web Developer")

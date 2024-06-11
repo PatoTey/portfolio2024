@@ -1,5 +1,6 @@
 import React from "react";
 import useTitleChanger from "../CustomHooks/useTitleChanger";
+import "../styles/experience.css"
 
 export default function Experience(){
     useTitleChanger("Teyo's Portfolio - My Experience")

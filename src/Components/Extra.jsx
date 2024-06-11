@@ -1,5 +1,6 @@
 import { FaLinkedin, FaCopy} from "react-icons/fa"
 import { MdEmail } from "react-icons/md";
+import "../styles/extra.css"
 
 export default function Extra(){
 

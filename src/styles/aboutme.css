@@ -1,0 +1,34 @@
+/**About me Section -------------------------------------------------------------------------------------------------------------------------------**/
+.aboutnav {
+	display: flex;
+	justify-content: center;
+	gap: 15em;
+	margin-top: 1em;
+}
+
+.introduction {
+	margin: 0 5em 5em 5em; 
+	font-size: 1.5rem;
+	background-color: var(--bgDark);
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	color: var(--textColor);
+	padding: 1em;
+	border-radius: 1em;
+	animation: appear 1s 0s;
+}
+
+.shine {
+	animation-name: shine;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.react {
+	color: var(--colorReact);
+}
+
+.express {
+	color: var(--colorExpress);
+}

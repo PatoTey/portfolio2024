@@ -1,0 +1,21 @@
+/**Experience Section ------------------------------------------------------------------------------------------------------------------------------**/
+
+.experience-section {
+	margin: 0 25%;
+	animation: appear 1s 0s;
+}
+
+.experience-date{
+	text-align: center;
+}
+
+.experience-text {
+	background-color: var(--bgDark);
+	border-radius: 1em;
+	font-size: 1.5em;
+	padding: 1em 3em;
+}
+
+.madewith-text{
+	color: var(--orange);
+}

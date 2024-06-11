@@ -1,6 +1,7 @@
 import React from "react";
 import useTitleChanger from "../CustomHooks/useTitleChanger";
 import data from "../Data/SkillsData";
+import "../styles/formation.css"
 
 export default function Formation(){
     useTitleChanger("Teyo's Portfolio - My academic formation")

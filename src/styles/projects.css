@@ -1,0 +1,152 @@
+/**Developer Section-------------------------------------------------------------------------------------------------------------------------------**/
+.pages-section{
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5em;
+}
+
+.pages-title{
+	margin: 0;
+	font-size: 3rem;
+	background-image: linear-gradient(145deg, var(--orange), var(--pink));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	animation: appear 1s 0s;
+}
+
+.pages {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	animation: appear 1s 0s;
+	gap: 1em;
+}
+
+.page {
+	display: flex;
+	flex-direction: row;
+	border: 0.125em solid #151418;
+	background-color: transparent;
+	background-image: linear-gradient(160deg,var(--bgDark) 0% 50%, var(--primary));
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border-radius: 1em;
+	max-width: 45%;
+	height: 30em;
+
+	animation: reveal linear both;
+	animation-timeline: view();
+	animation-range: entry 30% cover 40%;
+}
+
+.page:hover{
+	border: 0.125em solid pink;
+}
+
+.page-data{
+	max-width: 30%;
+	padding: 1em;
+}
+
+.pagetitle {
+	font-size: 2rem;
+}
+
+.pagedescription {
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin: 0;
+	text-wrap: wrap;
+}
+
+.image-container{
+	max-width: 70%;
+	flex-grow: 1;
+}
+
+.pageimagedesk {
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	border-radius: 1em;
+}
+
+.pagemade{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.2em;
+	margin: 1em 0 1em 0;
+	flex-wrap: wrap;
+	flex-basis: 3em;
+
+}
+
+.srclinks {
+	display: flex;
+	flex-direction: column;
+}
+
+.srclink {
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+	color: inherit;
+	text-decoration: none;
+}
+
+.tecnologies{
+	background-color: var(--secondary);
+	border-radius: 1em;
+	padding: 0.5em;
+	width: auto;
+	margin: 0;
+}
+
+.logossrc {
+	font-size: 2em;
+}
+
+.codetext {
+	text-wrap: nowrap;
+}
+
+.work-text{
+	font-size: 1.5em;
+}
+
+.work-star{
+	color: yellow;
+}
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	margin-top: 3em;
+	background-color: #22273a;
+	padding: 2em;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+.footer-link{
+	font-size: 2rem;
+}
+
+.unlink {
+	color: inherit;
+}
+
+.unlinknav {
+	text-decoration: none;
+	color: inherit;
+	padding: 0;
+	margin: 0;
+}
