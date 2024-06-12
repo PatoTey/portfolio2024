@@ -1,5 +1,4 @@
 :root {
-
 	--textColor: #eaeaf4;
 	--bgColor: #1e1e2a;
 	--primary: #9d9dd4;
@@ -15,13 +14,20 @@
 	--colorExpress: rgb(120, 253, 123);
 }
 
-
-
 body {
+	min-height: 100dvh;
 	margin: 0;
 	background-color: var(--bgColor);
 	color: var(--textColor);
 	font-family: 'Handjet', cursive;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-wrap: balance;
 }
 
 /**Keyframe/Media/Others Section ----------------------------------------------------------------------------------------------------------------------**/
@@ -70,7 +76,7 @@ body {
 		margin-bottom: 5em;
 		justify-content: center;
 		align-items: center;
-		padding: 3em 10em 0 10em;
+		padding: 3em 3em 0 3em;
 	}
 
 	.intro-container{
@@ -175,3 +181,14 @@ body {
 		text-align: center;
 	}
 }
+/*
+@media (prefers-reduced-motion: reduce){
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+		transition: none;
+	}
+}
+*/
