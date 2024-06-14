@@ -56,11 +56,11 @@ export default function Content(){
                             <FaLinkedin className="sociallink"/>
                         </a> 
                     </section>
-                    <div className="email-container"> 
+                   {/* <div className="email-container"> 
                         <MdEmail className="email-icon"/> 
                         <p id="email" className="email" value="ptudelach@hotmail.com">ptudelach@hotmail.com</p> 
                         <FaCopy className="copyClipboard" onClick={()=>copyToClipboard()}/>
-                    </div>
+                    </div>*/}
                     <div className="cv-container">
                         <a href="/resources/Resume_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Dowloand english CV"> Download CV English</a>
                         <a href="/resources/Curriculum_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Download spanish CV">Descargar CV Español</a>
