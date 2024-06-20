@@ -7,7 +7,7 @@
 }
 
 .introduction {
-	margin: 0 5em 5em 5em; 
+	margin: 0 5em 1em 5em; 
 	font-size: 1.5rem;
 	background-color: var(--bgDark);
 	backdrop-filter: blur(20px);
@@ -31,4 +31,16 @@
 
 .express {
 	color: var(--colorExpress);
+}
+
+.introduction-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cardteyo{
+	margin: 0;
+	text-align: center;
+	width: 20em;
 }
