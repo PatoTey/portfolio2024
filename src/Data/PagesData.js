@@ -2,6 +2,7 @@ import csmob from "../images/csmob.webp"
 import mcldesk from "../images/mclmob.webp"
 import gmdesk from "../images/gmmob.webp"
 import jmmob from "../images/jmmob.webp"
+import tapmob from "../images/tapmob.webp"
 
 const data = [
     {
@@ -29,6 +30,20 @@ const data = [
         appurl: "https://gamon.netlify.app",
         hascode: true,
         githuburl: "https://github.com/PatoTey/Gamon",
+        work: false,
+        time: "",
+    },
+    {
+        id: 7,
+        appname: "Teyo Pixel Arts Portfolio",
+        description: "A multi page Art portfolio showcasing pixel arts, and information for posible clients.",
+        madewith: ["React", "React Router", "Front-End"],
+        imagedesk: tapmob,
+        imagealt: "Three views of a pixel art portfolio",
+        hasdemo: true,
+        appurl: "https://teyoarts.netlify.app",
+        hascode: false,
+        githuburl: "",
         work: false,
         time: "",
     },
