@@ -6,7 +6,7 @@ import tapmob from "../images/tapmob.webp"
 
 const data = [
     {
-        id: 4,
+        id: 1,
         appname: "J&M Limpieza",
         description: "A landing page for a cleaning company. You can contact and order one of the services at home",
         madewith: ["React", "Front-End"],
@@ -20,7 +20,7 @@ const data = [
         time: "Nov 2023 - Mar 2024",
     },
     {
-        id: 1,
+        id: 2,
         appname: "Gamon",
         description: "A game marketplace where you can view, wishlist and order your favorite games using the Paypal API",
         madewith: ["React", "React-Router", "Node Express", "MySQL", "PayPal API", "Front-End", "Back-End"],
@@ -34,7 +34,7 @@ const data = [
         time: "",
     },
     {
-        id: 7,
+        id: 3,
         appname: "Teyo Pixel Arts Portfolio",
         description: "A multi page Art portfolio showcasing pixel arts, and information for posible clients.",
         madewith: ["React", "React Router", "Front-End"],
@@ -48,7 +48,7 @@ const data = [
         time: "",
     },
     {
-        id: 6,
+        id: 4,
         appname: "Try Hardware",
         description: "E-Commerce site with forums/community space for buyers and sellers",
         madewith: ["Laravel", "PHP", "MySQL", "MercadoPago API", "Front-End", "Back-End"],
@@ -76,7 +76,7 @@ const data = [
         time: "Sept 2020 - Dec 2020",
     },
     {
-        id: 2,
+        id: 6,
         appname: "CoffeStop",
         description: "A Front-End web app to showcase recipes and ordering your favorite type of coffe!",
         madewith: ["React", "React-Router", "Firebase", "Front-End"],
@@ -90,7 +90,7 @@ const data = [
         time: "",
     },
     {
-        id: 3,
+        id: 7,
         appname: "MyCartList",
         description: "A web tool for organizing your shopping, seing your quantities and pricing of your cart",
         madewith: ["React", "React-Router", "forms", "Front-End"],
