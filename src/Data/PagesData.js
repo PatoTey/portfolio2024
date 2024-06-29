@@ -36,7 +36,7 @@ const data = [
     {
         id: 3,
         appname: "Teyo Pixel Arts Portfolio",
-        description: "A multi page Art portfolio showcasing pixel arts, and information for posible clients.",
+        description: "An Art portfolio showcasing pixel arts, and information for posible clients.",
         madewith: ["React", "React Router", "Front-End"],
         imagedesk: tapmob,
         imagealt: "Three views of a pixel art portfolio",
