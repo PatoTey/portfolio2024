@@ -125,21 +125,6 @@
 	color: yellow;
 }
 
-.footer {
-	display: flex;
-	flex-direction: row;
-	margin-top: 3em;
-	background-color: #22273a;
-	padding: 2em;
-	align-items: center;
-	justify-content: center;
-	gap: 1em;
-}
-
-.footer-link{
-	font-size: 2rem;
-}
-
 .unlink {
 	color: inherit;
 }

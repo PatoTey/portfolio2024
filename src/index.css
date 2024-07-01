@@ -30,6 +30,23 @@ h1,h2,h3,h4,h5,h6 {
 	text-wrap: balance;
 }
 
+.footer {
+	display: flex;
+	flex-direction: row;
+	margin-top: 3em;
+	background-image: linear-gradient(145deg, var(--bgColor), var(--secondary), var(--bgColor));
+	background-color: #22273a;
+	padding: 2em;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+}
+
+.footer-link{
+	font-size: 2rem;
+}
+
+
 /**Keyframe/Media/Others Section ----------------------------------------------------------------------------------------------------------------------**/
 @keyframes shine {
 	0% {color: var(--colorExpress);}
@@ -181,14 +198,3 @@ h1,h2,h3,h4,h5,h6 {
 		text-align: center;
 	}
 }
-/*
-@media (prefers-reduced-motion: reduce){
-	*, *::before, *::after {
-		animation-duration: 0.01ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
-		scroll-behavior: auto !important;
-		transition: none;
-	}
-}
-*/
