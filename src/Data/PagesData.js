@@ -3,8 +3,38 @@ import mcldesk from "../images/mclmob.webp"
 import gmdesk from "../images/gmmob.webp"
 import jmmob from "../images/jmmob.webp"
 import tapmob from "../images/tapmob.webp"
+import cavelord from "../images/clrd.webp"
+import rsnd from "../images/rsnd.webp"
 
 const data = [
+    {
+        id: 8,
+        appname: "Cave Lord | 1st Place!",
+        description: "Winner of the Micro Jam #21 that took place in 48 hours. Theme was 'Underground' and a prerequisite was that players started with LOOT. Coding, art and music by Teyo.",
+        madewith: ["Godot", "GDScript", "Aseprite", "Beatwave"],
+        imagedesk: cavelord,
+        imagealt: "Cave Lords Itchio page",
+        hasdemo: true,
+        appurl: "https://nlteyo.itch.io/cave-lord",
+        hascode: false,
+        githuburl: "",
+        work: true,
+        time: "August 2024",
+    },
+    {
+        id: 9,
+        appname: "Royal Sands | 4th Place!",
+        description: "4th place in the Micro Jam #22 that took place in 48 hours. Theme was 'Desert' and a prerequisite was Resources are scarce. Coding, art and music by Teyo.",
+        madewith: ["Godot", "GDScript", "Aseprite", "Beatwave"],
+        imagedesk: rsnd,
+        imagealt: "Royal Sands Itchio page",
+        hasdemo: true,
+        appurl: "https://nlteyo.itch.io/royal-sands",
+        hascode: false,
+        githuburl: "",
+        work: true,
+        time: "September 2024",
+    },
     {
         id: 1,
         appname: "J&M Limpieza",

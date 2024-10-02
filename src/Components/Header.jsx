@@ -66,18 +66,15 @@ export default function Content(){
                         <a href="/resources/Curriculum_Patricio_Tudela.pdf" download className="cvbtn" aria-label="Download spanish CV">Descargar CV Español</a>
                     </div>
                 </div>  
-                
             </section>
-
             <section className="nav-section">
                 <div className="nav">
                     <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/aboutme" aria-label="Move to About me section"><h3>About Me</h3></NavLink>
-                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/" aria-label="Move to Developer section"><h3>Web Developer</h3></NavLink>
+                    <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/" aria-label="Move to Developer section"><h3>Developer</h3></NavLink>
                     <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/formation" aria-label="Move to academic formation section"><h3>Formation</h3></NavLink>
                     <NavLink style={({isActive})=>isActive ? styles : null} className="unlinknav nav-link" to="/experience" aria-label="Move experience section"><h3>Experience</h3></NavLink>
                 </div>
             </section>
-
         </section>
     )
 }
